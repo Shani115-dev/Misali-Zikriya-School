@@ -1,4 +1,4 @@
-hi@media (max-width: 425px) {
+@media (max-width: 425px) {
   body{
     font-family:'Crimson';
   }
@@ -213,7 +213,9 @@ hi@media (max-width: 425px) {
 
 @media (max-width: 375px) {
   /* HERO SECTION STYLING / .hero-section { height: 140vh; / Adjust height for smaller screens */
-
+body{
+  font-family:'Crimson';
+}
   .welcome-text {
     font-size: 0.75rem; /* Smaller font size */
   }
