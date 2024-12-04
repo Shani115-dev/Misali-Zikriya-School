@@ -1,0 +1,1342 @@
+body {
+  font-family: "Crimson";
+}
+/* header Styling */
+
+/* Style.css */
+:root {
+  --orange-color: #e63946;
+  --blue-color: #2a6f7f;
+}
+/* navbar styling */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 900;
+} /* Default styles for the navbar */
+.header_wrapper {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Sticky styles for the navbar */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 1s all ease-in;
+}
+.navbar-brand img {
+  height: 40px;
+  width: 40px;
+}
+.navbar-expand {
+  padding-top: 0px;
+}
+.navbar-span {
+  margin-top: 12px;
+  margin-left: 9px;
+  font-family: "Crimson Text", serif;
+  margin-bottom: -4px;
+}
+.navbar-collapse {
+  margin-top: 16px;
+  padding-right: 1.8rem;
+}
+.text-orange {
+  color: var(--orange-color);
+}
+
+.text-blue {
+  color: var(--blue-color);
+}
+/* custom button styling */
+.custom-button {
+  position: relative;
+  display: inline-block;
+  padding: 8px 18px;
+  margin-left: 6px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  background-color: #e63946;
+  color: white; /* Text color */
+  border-radius: 30px; /* Rounded corners */
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.4s ease; /* Transition for text color */
+  z-index: 1;
+}
+
+.custom-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #2a6f7f; /* Dark blue background color */
+  transition: height 0.4s ease; /* Transition for height */
+  border-radius: 30px;
+  z-index: -1;
+}
+
+.custom-button:hover::before {
+  height: 100%; /* Fills the button vertically on hover */
+}
+
+.custom-button:hover {
+  color: rgb(255, 255, 255); /* Change text color on hover */
+}
+/* navlinks styling */
+.nav-link {
+  color: var(--blue-color);
+  font-weight: 500;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--orange-color);
+}
+
+/* Dropdown visibility on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Aligns dropdown closer */
+}
+
+.dropdown-menu {
+  border-radius: 0.2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  overflow: hidden;
+  display: none; /* Prevent dropdown from showing on click */
+}
+
+.dropdown-item {
+  transition: 0.3s, color 0.3s;
+}
+
+.dropdown-item:hover {
+  background: var(--orange-color);
+  color: white;
+}
+
+/* Search icon styling */
+.fa-magnifying-glass {
+  font-size: 1.2rem;
+  color: var(--blue-color);
+  transition: color 0.3s;
+}
+
+.fa-magnifying-glass:hover {
+  color: var(--orange-color);
+}
+/* Default Navbar Toggler */
+.custom-toggler {
+  border: none;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--orange-color); /* Default background color */
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover Effect */
+.custom-toggler:hover {
+  background-color: var(--blue-color); /* Change color on hover */
+  transform: scale(1.1); /* Slight zoom */
+}
+
+/* Toggled (Active) State */
+.custom-toggler.active {
+  background-color: #003d59; /* Color when clicked */
+  transform: rotate(180deg); /* Optional: rotate the button */
+  border: none;
+}
+
+/* Toggler Icon Styles */
+.navbar-toggler-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.header_wrapper .fa-graduation-cap {
+  font-size: 2rem;
+  color: #e63946;
+  margin-top: 3px;
+}
+
+/* front Section styling */
+
+/* Hero Section */
+.hero-section {
+  background: url("front\ page\ background\ picture_LE_upscale_balanced_x4.jpeg")
+    no-repeat center center/cover;
+  min-height: 100vh;
+  color: white;
+  position: relative;
+  object-fit: cover;
+  height: 120vh;
+}
+
+.welcome-text {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #e63946;
+  font-weight: 600;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  line-height: 1.3;
+  font-weight: 900;
+}
+.global-opporunities .cards-header p {
+  color: #e63946;
+  display: flex;
+  justify-content: center;
+}
+.hero-section p.lead {
+  font-size: 1.3rem;
+  margin-top: 15px;
+  font-weight: 300;
+}
+
+.hero-section .btn-primary {
+  background-color: #f08d8d;
+  border-color: #f08d8d;
+  transition: background-color 0.3s ease;
+}
+
+.hero-section .btn-primary:hover {
+  background-color: #e63946;
+}
+
+.hero-section .btn-outline-light {
+  border-color: white;
+  color: white;
+}
+
+.hero-section .btn-outline-light:hover {
+  background-color: white;
+  color: #e63946;
+}
+.margin_left_front_page {
+  margin-left: 0.2rem;
+  margin-top: 6rem;
+}
+
+.custom-button-2 {
+  position: relative;
+  display: inline-block;
+  padding: 16px 18px;
+  margin-left: 6px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  background-color: #e63946;
+  color: white; /* Text color */
+  border-radius: 3px; /* Rounded corners */
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.4s ease; /* Transition for text color */
+  z-index: 1;
+}
+.custom-button-3 {
+  position: relative;
+  display: inline-block;
+  padding: 16px 18px;
+  margin-left: 15px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid white;
+  background-color: none;
+  color: white; /* Text color */
+  border-radius: 3px; /* Rounded corners */
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.4s ease; /* Transition for text color */
+  z-index: 1;
+}
+.custom-button-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #2a6f7f; /* Dark blue background color */
+  transition: height 0.2s ease; /* Transition for height */
+  z-index: -1;
+}
+
+.custom-button-2:hover::before {
+  height: 100%; /* Fills the button vertically on hover */
+}
+
+.custom-button-2:hover {
+  color: rgb(255, 255, 255); /* Change text color on hover */
+}
+.custom-button-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #2a6f7f; /* Dark blue background color */
+  transition: height 0.2s ease; /* Transition for height */
+  z-index: -1;
+}
+
+.custom-button-3:hover::before {
+  height: 100%; /* Fills the button vertically on hover */
+}
+
+.custom-button-3:hover {
+  color: rgb(255, 255, 255); /* Change text color on hover */
+}
+
+/* cards styling in front page */
+.card {
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.card i {
+  font-size: 2.1rem;
+}
+.card-education {
+  background-color: #2a6f7f;
+  padding-bottom: 35px;
+}
+.card-international {
+  background-color: #2a6f7f;
+}
+.card-bachelor {
+  background-color: #2a6f7f;
+}
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.card-text {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.read-more {
+  position: relative;
+  display: inline-block;
+  color: #fffefe; /* Text color */
+  text-decoration: none; /* Remove default underline */
+  font-size: 16px;
+  padding: 3px 0;
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+.read-more::before {
+  content: ""; /* Create the pseudo-element */
+  position: absolute;
+  bottom: 0; /* Place it at the bottom of the anchor */
+  left: 0; /* Start from the left */
+  width: 0%; /* Start with no width */
+  height: 2px; /* Border height */
+  background-color: #f9f6f6; /* Border color */
+  transition: width 0.4s ease; /* Smooth sliding effect */
+}
+.read-more:hover {
+  color: white;
+}
+/* Expand the Border on Hover */
+.read-more:hover::before {
+  width: 100%; /* Full width on hover */
+}
+
+.card:hover {
+  background-color: #e63946;
+  transition: 0.2s all ease-in;
+  cursor: pointer;
+}
+.icon_heading {
+  margin-bottom: 2rem;
+}
+
+/* About Section Styling  */
+.experience-box {
+  background-color: #e63946;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: -50px;
+  z-index: 1;
+  position: relative;
+}
+
+.experience-box h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: white;
+}
+
+.experience-box p {
+  margin: 0;
+  color: white;
+}
+
+.about-section {
+  padding: 50px 0;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.about-section h3 {
+  font-size: 3rem;
+  font-family: "Crimson Text", serif;
+  font-weight: 800;
+}
+.about-section p {
+  font-size: 1rem;
+  color: #555;
+}
+.about-section .cards {
+  margin-bottom: 3px;
+}
+.about-section .image-container {
+  margin-top: 4rem;
+}
+.about-section .image-container img {
+  width: 376px;
+  height: 421px;
+  object-fit: cover;
+}
+.icon-box {
+  background-color: #e63946;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  width: 60px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  margin-bottom: 3.4rem;
+}
+
+.feature-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.feature-box h4 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.feature-box p {
+  margin: 0;
+  color: #555;
+}
+
+.image-container {
+  border: 5px solid #e63946;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 104vh;
+}
+
+.about_heading .About-text {
+  color: #e63946;
+  font-size: 1rem;
+}
+.about_heading img {
+  height: 37px;
+  width: 37px;
+}
+.about-section .about-para-text {
+  color: #2a6f7f;
+}
+
+/* Graduation Section Styling */
+.graduate-programs {
+  background-color: #f8f9fa;
+}
+
+.card-carousel {
+  overflow: hidden;
+  display: flex;
+  gap: 16px;
+  transition: transform 1s ease;
+}
+
+.carousel-container .card {
+  flex-shrink: 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #2a6f7f;
+  padding: 0px;
+  margin-left: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.carousel-container .card img {
+  object-fit: cover;
+}
+.carousel-btn {
+  z-index: 1000;
+  background-color: #fff;
+  padding: 2rex;
+  color: #2a6f7f;
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.graduate-programs .container h2 {
+  font-size: 36px;
+  font-family: "Crimson Text", serif;
+  font-weight: 800;
+}
+.graduate-programs .container .badge-button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+}
+.graduate-programs .container .card-title {
+  font-family: "Crimson Text", serif;
+}
+/* General Button Styling */
+.carousel-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%; /* Circular shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e63946; /* Button background */
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: all 0.3s ease-in-out; /* Smooth effects */
+  z-index: 10; /* Ensures buttons stay on top */
+}
+
+/* Icon Styling */
+.carousel-btn i {
+  font-size: 20px; /* Icon size */
+  color: #fff; /* Icon color */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth animation */
+}
+
+/* Hover Effects on Buttons */
+.carousel-btn:hover {
+  background-color: #e63946; /* Slightly darker on hover */
+  transform: scale(1.1); /* Button zoom effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+.carousel-btn:hover i {
+  color: #ffebe9; /* Change icon color on hover */
+  transform: translateX(-2px); /* Subtle icon movement */
+}
+
+/* Active (Pressed) State */
+.carousel-btn:active {
+  transform: scale(0.95); /* Slightly shrink on click */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+/* Focus State */
+.carousel-btn:focus {
+  outline: 2px solid #e63946; /* Accessibility outline */
+  outline-offset: 4px;
+}
+
+/* Specific Button Spacing */
+#prevBtn {
+  left: 15px; /* Aligning the left button */
+}
+
+#nextBtn {
+  right: 15px; /* Aligning the right button */
+}
+
+.graduate-programs .container .card-body a {
+  position: relative;
+  display: inline-block;
+  color: #333; /* Text color */
+  text-decoration: none; /* Remove default underline */
+  font-size: 16px;
+  padding: 3px 0;
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.graduate-programs .container .card-body a:hover {
+  color: #e63946; /* Change text color on hover */
+}
+.graduate-programs .container .card-body a::before {
+  content: ""; /* Create the pseudo-element */
+  position: absolute;
+  bottom: 0; /* Place it at the bottom of the anchor */
+  left: 0; /* Start from the left */
+  width: 0%; /* Start with no width */
+  height: 2px; /* Border height */
+  background-color: #e63946; /* Border color */
+  transition: width 0.4s ease; /* Smooth sliding effect */
+}
+
+/* Expand the Border on Hover */
+.graduate-programs .container .card-body a:hover::before {
+  width: 100%; /* Full width on hover */
+}
+
+/* Feature Section Styling */
+
+.features-section {
+  background-color: #00334e;
+}
+
+.features-section h2 {
+  font-size: 2.9rem;
+  font-weight: bold;
+  font-family: "Crimson Text", serif;
+}
+
+.feature-card .icon-wrapper {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.9rem;
+  padding: 12px;
+  background-color: #e55d50;
+}
+
+.feature-card h5 {
+  font-size: 1.55rem;
+  font-weight: bold;
+  font-family: "Crimson Text", serif;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  color: #d6d6d6;
+}
+
+/* .features-section img{
+  height: 90vh;
+} */
+.feature-card .icon-wrapper img {
+  height: 40px;
+  width: 40px;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+/* upcoming events section */
+.event-header {
+  text-align: center;
+  margin-top: 20px;
+}
+.upcoming-events .container .card {
+  min-height: 30vh;
+  background-color: #caf0f8;
+  padding: 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.upcoming-events .container .card:hover {
+  background-color: #255a67;
+  color: #f8f9fa;
+}
+.upcoming-events .container .event-header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #00334e;
+  font-family: "Crimson";
+}
+
+.upcoming-events .container .event-header p {
+  color: #ff6f61;
+  font-size: 18px;
+}
+
+.upcoming-events .container .event-card {
+  border: none;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.upcoming-events .container .event-card img {
+  width: 100%;
+  height: 40vh;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  object-fit: cover;
+}
+.upcoming-events .container .event-card img:hover {
+  transform: scale(1.1);
+}
+.upcoming-events .container .event-date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #e63946;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 0.3rem;
+  visibility: hidden;
+}
+
+.upcoming-events .event-content {
+  padding: 15px;
+  color: white;
+  margin-top: 7px;
+}
+
+.upcoming-events .event-content h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 252, 252);
+  font-family: "Crimson";
+}
+
+.upcoming-events .event-content p {
+  color: #f8fbfd;
+}
+
+.event-header p {
+  color: #f35b04;
+}
+
+/* Scholar Ship programe styling */
+.scholarship-section {
+  position: relative;
+  background-image: url("Premium\ Photo\ _\ Business\ people\ working\ as\ team\ in\ modern\ office\,\ discussing\ business\ plans\ and\ strategies\,\ share\ ideas_\ caucasian\ men\ and\ women\ in\ formal\ wear\ having\ talk\,\ communicating\,\ while\ sitting\ behind\ tabl.jpeg"); /* Replace 'background.jpg' with your background image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  height: 40vh; /* Full-screen height */
+  overflow: hidden;
+}
+
+.scholarship-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    58,
+    79,
+    0.8
+  ); /* Dark blue overlay with 80% opacity */
+  z-index: 1; /* Keeps the overlay behind the content */
+}
+
+.scholarship-section .container {
+  position: relative;
+  z-index: 2; /* Ensures the content is above the overlay */
+}
+
+.scholarship-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.scholarship-section p {
+  font-size: 1.1rem;
+  max-width: 600px;
+}
+
+.scholarship-section .btn {
+  background-color: #e63946; /* Custom orange button */
+  border: none;
+  font-size: 1.2rem;
+  padding: 7px 15px;
+}
+
+.scholarship-section .btn:hover {
+  background-color: #e63946;
+}
+
+/* Questioning Section Styling */
+.Questioning_wrapper {
+  background-color: #f6fff8;
+}
+.faq-section {
+  padding: 50px;
+}
+
+.faq-section h1 {
+  font-family: "Crimson";
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.contact-section {
+  background-color: #002b36;
+  color: white;
+  padding: 40px;
+  /* height: 100vh; */
+  height: auto;
+  border-radius: 8px;
+  margin-top: 4rem;
+}
+
+.contact-section h2 {
+  margin-bottom: 30px;
+  font-family: "Crimson";
+}
+
+.contact-section .form-control {
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.contact-section .btn {
+  background-color: #e63946;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.accordion-button:focus {
+  border-color: #e63946 !important;
+  box-shadow: none;
+  background-color: #002b36;
+  color: white;
+  /* Removes the default blue focus shadow for a cleaner look */
+}
+
+/* Style the arrow icon (caret) */
+.accordion-button::after {
+  content: "";
+  /* Default caret is removed */
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid black;
+  /* Default arrow color */
+  border-bottom: 2px solid black;
+  transform: rotate(45deg);
+  margin-left: auto;
+  /* Pushes the arrow to the right */
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+/* Rotate the arrow when the accordion is expanded */
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(-135deg);
+  border-color: rgb(246, 246, 246);
+  /* Arrow color when expanded */
+}
+
+.accordion-button:not(.collapsed) {
+  border-color: rgb(229, 228, 226) !important;
+}
+.contact-section {
+  transition: min-height 0.3s ease;
+}
+
+.contact-section .btn:hover {
+  background-color: #e63946;
+}
+
+/* play Section Styling */
+/* Custom Styles */
+.play-section {
+  background-image: url("graphic design image.jpeg");
+  /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  position: relative;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play-section h1 {
+  font-family: "Crimson";
+}
+.play-section p {
+  font-family: "Crimson";
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.play-icon {
+  width: 70px;
+  height: 70px;
+  /* background: white; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 0 15px rgba(255, 87, 34, 0.6);
+}
+
+.play-icon i {
+  font-size: 30px;
+  color: #e63946;
+  z-index: 1;
+}
+
+.play-icon::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 3px solid rgba(255, 87, 34, 0.6);
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+  opacity: 0.6;
+}
+
+.play-icon::after {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border: 3px solid rgba(255, 87, 34, 0.3);
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+  animation-delay: 0.75s;
+  opacity: 0.3;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+/* Testimonial Section Styling  */
+
+.testimonial-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.testimonial-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Crimson";
+}
+
+.testimonial-section .section-title {
+  color: #e63946;
+  font-size: 18px;
+  /* font-weight: bold; */
+  margin-bottom: 10px;
+}
+
+.testimonial-card {
+  background-color: #e9f7fe;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.testimonial-card .quote-icon {
+  font-size: 40px;
+  color: #ff6f61;
+}
+
+.testimonial-card p {
+  font-size: 16px;
+  color: #6c757d;
+  margin: 20px 0;
+}
+
+.testimonial-card .client-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.testimonial-card .client-info img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.testimonial-card .client-info h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  font-family: "Crimson";
+}
+
+.testimonial-card .client-info span {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* Search Section Styling */
+.search-section {
+  background-color: #003d59;
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.search-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.search-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.search-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Crimson";
+}
+
+.search-section form .form-control,
+.search-section form .form-select {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  transition: 1s all ease-in;
+}
+
+.search-section form .btn {
+  background-color: #e63946;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+}
+
+.search-section form .btn:hover {
+  background-color: #e63946;
+}
+.search-section img{
+  height: 300px;
+  margin-top: 6rem;
+  width: 300px ;
+}
+.search-section select option {
+  transition: 0.4 all ease-in;
+}
+
+/* Aid Section Styling */
+
+.Aid_wrapper .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.Aid_wrapper .content {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.Aid_wrapper .content img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.Aid_wrapper .text-content {
+  margin-left: 20px;
+  flex: 1;
+}
+
+.Aid_wrapper .text-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  font-family: "Crimson";
+}
+
+.Aid_wrapper .text-content p {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+/* logo designer */
+.icon-section {
+  background-color: #e63946; /* Orange background */
+  color: #fff;
+  font-family: "Crimson";
+}
+
+.icon-section img {
+  max-height: 50px; /* Adjust the logo size */
+  font-weight: 700;
+}
+
+.icon-section p {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+/* Blog section Styling */
+.blog_wrapper .container .blog-header {
+  text-align: center;
+  margin: 40px 0;
+  font-family: "Crimson";
+}
+.blog_wrapper .container .blog-header h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.blog_wrapper .container .blog-header p {
+  color: #ff6f61;
+  font-size: 18px;
+}
+.blog_wrapper .container .blog-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding: 0px;
+  color: #002b36;
+  transition: all 0.4s ease-in;
+}
+
+.blog_wrapper .container .blog-card img {
+  width: 100%;
+  height: auto;
+}
+.blog_wrapper .container .blog-card .card-body {
+  padding: 20px;
+}
+.blog_wrapper .container .blog-card .card-body p {
+  margin: 0;
+  font-family: "Crimson";
+}
+.blog_wrapper .container .blog-card .card-body .meta-info {
+  color: #6c757d;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.blog_wrapper .container .blog-card .card-body .meta-info i {
+  margin-right: 5px;
+  font-size: 15px;
+  color: #e63946;
+}
+.blog_wrapper .container .blog-card .card-body .date-badge {
+  background-color: #e63946;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+/* Subscribe Section STyling */
+.subscribe-section {
+  background-color: #073b4c;
+  color: white;
+  /* padding: 30px 0px; */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.subscribe-section .form-control {
+  border-radius: 0;
+  padding: 1rem;
+  border-radius: 15px;
+  border: none;
+}
+.subscribe-section .btn {
+  border-radius: 0;
+}
+.custom-button-4 {
+  padding: 1rem;
+  margin-left: -23px;
+  border-end-end-radius: 10px;
+  border-top-right-radius: 10px;
+  border: none;
+  background-color: #e63946;
+  color: white;
+}
+
+.subscribe-section h2 {
+  font-family: "Crimson";
+  font-size: 2.4rem;
+}
+
+.footer {
+  padding: 40px 0;
+  /* margin-top: -2rem; */
+
+}
+.footer {
+  background-color: #073b4c;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: white;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.1s all ease-in;
+}
+
+.footer a:hover {
+  color: #e63946;
+}
+
+.footer .social-icons a {
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 25px;
+  transition: 0.1s all ease-in;
+}
+.footer .social-icons a:hover {
+  translate: scaleY(1.1);
+  color: #e63946;
+}
+.footer .contact-info i {
+  color: #e63946;
+  margin-right: 10px;
+}
+
+.footer .latest-post img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.footer .latest-post a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer .latest-post a:hover {
+  color: #e63946;
+}
+
+.footer .latest-post p {
+  margin: 0;
+  font-size: 12px;
+  color: #e63946;
+}
+
+.footer .back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e63946;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 18px;
+}
+.footer .anchor {
+  margin-bottom: 10px;
+}
+
+.developers {
+  color: #e63946;
+}

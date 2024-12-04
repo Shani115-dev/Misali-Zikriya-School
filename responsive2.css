@@ -1,0 +1,314 @@
+@media (max-width: 425px) {
+  .navbar-brand img {
+    height: 30px;
+    width: 30px;
+  }
+  .custom-button {
+    font-size: 8px;
+  }
+  .navbar-span {
+    margin-top: 12px;
+    margin-left: 9px;
+    font-family: "Crimson Text", serif;
+    margin-bottom: -4px;
+    font-size: 1rem;
+  }
+  .navbar-toggler {
+    padding: 5px;
+  }
+  /* HERO SECTION STYLING */
+  .hero-section {
+    background: url("front\ page\ background\ picture_LE_upscale_balanced_x4.jpeg")
+      no-repeat center center/cover;
+    min-height: 80vh;
+    color: white;
+    position: relative;
+    object-fit: cover;
+    height: fit-content;
+  }
+  .hero-section .row {
+    padding-left: 1rem;
+  }
+  .welcome-text {
+    font-size: 0.8rem; /* Smaller font size */
+  }
+
+  .hero-section h1 {
+    font-size: 2.2rem; /* Adjusted font size */
+  }
+
+  .hero-section p.lead {
+    font-size: 0.9rem; /* Smaller lead text */
+  }
+  .about-section {
+    padding-bottom: 4px;
+  }
+  .about-section .image-experience,
+  .about-experience {
+    padding: 1.3rem;
+  }
+  .custom-button-2,
+  .custom-button-3 {
+    font-size: 7px; /* Smaller button text */
+    padding: 12px 12px; /* Adjust padding */
+  }
+  .about-section .about_heading {
+    margin-top: 2rem;
+  }
+  .about-section .icon-box {
+    background-color: #e63946;
+    color: white;
+    border-radius: 50%;
+    padding: 12px;
+    width: 60px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    margin-bottom: 3rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.5rem; /* Smaller heading */
+  }
+
+  .about-section h3 {
+    font-size: 1.5rem; /* Smaller heading */
+  }
+
+  .about-section p {
+    font-size: 0.9rem; /* Smaller paragraph text */
+  }
+
+  .about-section .image-container img {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .feature-box h4 {
+    font-size: 1rem; /* Smaller feature heading */
+  }
+
+  .feature-box p {
+    font-size: 0.8rem; /* Smaller feature text */
+  }
+
+  .testimonial-card {
+    padding: 15px; /* Adjust padding */
+  }
+
+  .testimonial-section h2 {
+    font-size: 28px; /* Smaller testimonial heading */
+  }
+
+  /* Scholar Ship programe styling */
+  .scholarship-section {
+    position: relative;
+    background-image: url("Premium\ Photo\ _\ Business\ people\ working\ as\ team\ in\ modern\ office\,\ discussing\ business\ plans\ and\ strategies\,\ share\ ideas_\ caucasian\ men\ and\ women\ in\ formal\ wear\ having\ talk\,\ communicating\,\ while\ sitting\ behind\ tabl.jpeg"); /* Replace 'background.jpg' with your background image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    height: fit-content; /* Full-screen height */
+    overflow: hidden;
+  }
+  .contact-section h2 {
+    font-size: 1.2rem; /* Smaller contact heading */
+  }
+  .faq-section {
+    padding: 10px 15px 10px 15px;
+  }
+  .contact-section .form-control {
+    padding: 10px; /* Adjust padding */
+  }
+  .search-section {
+    padding: 10px 15px 10px 15px;
+  }
+  .blog_wrapper .container .blog-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 0px;
+    color: #002b36;
+    transition: all 0.4s ease-in;
+    height: auto;
+  }
+  .Aid_wrapper .content {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    /* margin-top: 15rem; */
+    justify-self: center;
+
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+  }
+  .Aid_wrapper .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  .subscribe-section h2 {
+    font-size: 1.5rem; /* Smaller subscribe heading */
+  }
+
+  .footer h5 {
+    font-size: 16px; /* Smaller footer heading */
+  }
+
+  .footer p {
+    font-size: 12px; /* Smaller footer text */
+  }
+
+  .footer a {
+    font-size: 12px; /* Smaller footer link */
+  }
+
+  .Aid_wrapper .content {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align */
+  }
+
+  .Aid_wrapper .text-content {
+    margin-left: 0; /* Remove left margin */
+    margin-top: 1rem; /* Add top margin */
+  }
+
+  .subscribe-section .form-control {
+    min-width: 100%; /* Full width for input */
+  }
+
+  .subscribe-section .btn {
+    width: 100%; /* Full width for button */
+  }
+
+  .blog_wrapper .container .blog-card {
+    min-height: auto; /* Adjust height */
+  }
+
+  .blog_wrapper .container .blog-card img {
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .blog_wrapper .container .blog-card .card-body p {
+    font-size: 0.8rem; /* Smaller blog text */
+  }
+  .custom-button-4 {
+    border-radius: 10px;
+    padding: 5px;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 375px) {
+  /* HERO SECTION STYLING / .hero-section { height: 140vh; / Adjust height for smaller screens */
+
+  .welcome-text {
+    font-size: 0.75rem; /* Smaller font size */
+  }
+
+  .hero-section h1 {
+    font-size: 2rem; /* Adjusted font size */
+  }
+
+  .hero-section p.lead {
+    font-size: 0.85rem; /* Smaller lead text */
+  }
+
+  .custom-button-2,
+  .custom-button-3 {
+    font-size: 7px; /* Smaller button text / padding: 10px 10px; / Adjust padding */
+  }
+
+  .about-section h2 {
+    font-size: 1.3rem; /* Smaller heading */
+  }
+
+  .about-section h3 {
+    font-size: 1.3rem; /* Smaller heading */
+  }
+
+  .about-section p {
+    font-size: 0.85rem; /* Smaller paragraph text */
+  }
+
+  .about-section .image-container img {
+    width: 100%; /* Full width for images / height: auto; / Maintain aspect ratio */
+  }
+
+  .feature-box h4 {
+    font-size: 0.9rem; /* Smaller feature heading */
+  }
+
+  .feature-box p {
+    font-size: 0.75rem; /* Smaller feature text */
+  }
+
+  .testimonial-card {
+    padding: 10px; /* Adjust padding */
+  }
+
+  .testimonial-section h2 {
+    font-size: 24px; /* Smaller testimonial heading */
+  }
+
+  .contact-section h2 {
+    font-size: 1.1rem; /* Smaller contact heading */
+  }
+
+  .contact-section .form-control {
+    padding: 8px; /* Adjust padding */
+  }
+
+  .subscribe-section h2 {
+    font-size: 1.3rem; /* Smaller subscribe heading */
+  }
+
+  .footer h5 {
+    font-size: 14px; /* Smaller footer heading */
+  }
+
+  .footer p {
+    font-size: 11px; /* Smaller footer text */
+  }
+
+  .footer a {
+    font-size: 11px; /* Smaller footer link */
+  }
+
+  .Aid_wrapper .content {
+    flex-direction: column; /* Stack content vertically / align-items: center; / Center align */
+  }
+
+  .Aid_wrapper .text-content {
+    margin-left: 0; /* Remove left margin / margin-top: 1rem; / Add top margin */
+  }
+
+  .subscribe-section .form-control {
+    min-width: 100%; /* Full width for input */
+  }
+
+  .subscribe-section .btn {
+    width: 100%; /* Full width for button */
+  }
+
+  .blog_wrapper .container .blog-card {
+    min-height: auto; /* Adjust height */
+  }
+
+  .blog_wrapper .container .blog-card img {
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .blog_wrapper .container .blog-card .card-body p {
+    font-size: 0.75rem; /* Smaller blog text */
+  }
+}
