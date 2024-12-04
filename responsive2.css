@@ -1,5 +1,8 @@
-@media (max-width: 425px) {
-  .navbar-brand img {
+hi@media (max-width: 425px) {
+  body{
+    font-family:'Crimson';
+  }
+.navbar-brand img {
     height: 30px;
     width: 30px;
   }
