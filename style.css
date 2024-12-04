@@ -190,6 +190,7 @@ body {
   position: relative;
   object-fit: cover;
   height: 120vh;
+  font-family: "Crimson";
 }
 
 .welcome-text {
@@ -198,28 +199,33 @@ body {
   text-transform: uppercase;
   color: #e63946;
   font-weight: 600;
+  font-family: "Crimson";
 }
 
 .hero-section h1 {
   font-size: 3rem;
   line-height: 1.3;
   font-weight: 900;
+  font-family: "Crimson";
 }
 .global-opporunities .cards-header p {
   color: #e63946;
   display: flex;
   justify-content: center;
+  font-family: "Crimson";
 }
 .hero-section p.lead {
   font-size: 1.3rem;
   margin-top: 15px;
   font-weight: 300;
+  font-family: "Crimson";
 }
 
 .hero-section .btn-primary {
   background-color: #f08d8d;
   border-color: #f08d8d;
   transition: background-color 0.3s ease;
+  font-family: "Crimson";
 }
 
 .hero-section .btn-primary:hover {
@@ -256,6 +262,7 @@ body {
   cursor: pointer;
   transition: color 0.4s ease; /* Transition for text color */
   z-index: 1;
+  font-family: "Crimson";
 }
 .custom-button-3 {
   position: relative;
